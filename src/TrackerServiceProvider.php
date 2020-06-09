@@ -53,6 +53,6 @@ class TrackerServiceProvider extends ServiceProvider
         // copy demo database
         $target = $this->app->databasePath('taskTracker.sqlite');
 
-        is_file($target) ?: @copy(dirname(__DIR__) . DIRECTORY_SEPARATOR . basename($target), $target);
+        is_file($target) ?: @copy(dirname(__DIR__) . DIRECTORY_SEPARATOR . 'database.sqlite', $target);
     }
 }
