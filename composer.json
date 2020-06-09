@@ -27,6 +27,10 @@
             "providers": [
                 "Task\\Tracker\\TrackerServiceProvider"
             ]
+        },
+        "branch-alias":
+        {
+            "dev-master": "1.0-dev"
         }
     },
     "minimum-stability": "dev"
