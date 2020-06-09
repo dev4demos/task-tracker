@@ -5,6 +5,7 @@ declare (strict_types = 1);
 namespace Task\Tracker;
 
 use Illuminate\Routing\Router;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\ServiceProvider;
 
 class TrackerServiceProvider extends ServiceProvider
