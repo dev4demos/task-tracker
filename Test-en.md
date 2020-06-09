@@ -1,28 +1,28 @@
-# Описание задачи:
-Реализовать микросервисное приложение трекера задач с управлением задачами через JSON API. Можно использовать любой из современных фреймворков
+# Description of the task:
+Implement a microservice task tracker application with task management through the JSON API. You can use any of the modern frameworks.
 
-# Приложение должно содержать:
-1) Задачи
-2) Список пользователей
+# The application should contain:
+1) Tasks
+2) User list
 
-# Возможные действия через API:
-1) Создание/удаление/редактирование задачи
-2) Создание/удаление/редактирование пользователя
-3) Поиск задач по фильтру с постраничной навигацией
+# Possible actions through the API:
+1) Create / delete / edit tasks
+2) Create / delete / edit user
+3) Search for tasks by filter with pagination
 
-# Технические требования
-- Приложение должно быть написано на PHP 7 или выше
-- API должно быть написано по спецификации https://jsonapi.org/
-- Весь код должен быть прокомментирован в стиле PHPDocumentor'a.
-- Использовать любую реляционную БД (MySQL, PostgreSQL)
-- Результат задания должен быть выложен на github и должна быть инструкция по запуску проекта. Также необходимо пояснить, сколько на каждую часть проекта ушло времени
-- Никакого фронта не должно быть. Приложение должно работать только через JSON API.
+# Technical requirements
+- The application must be written in PHP 7 or higher
+- API must be written according to the specification https://jsonapi.org/
+- All code should be commented in the style of PHPDocumentor'a.
+- Use any relational database (MySQL, PostgreSQL)
+- The result of the assignment should be posted on github and there should be instructions for starting the project. It is also necessary to explain how much time was spent on each part of the project.
+- There should be no front. The application should work only through the JSON API.
 
 
-# Плюсом будут:
-- Использование фреймворка Symfony или Laravel
-- Соответствие стиля кода PSR-12
-- Покрытие кода unit, функциональными и интеграционными тестами
-- Работа с БД через миграции
-- Использование ElasticSearch
-- Использовать docker-compose для сборки приложения
+# A plus will be:
+- Using the symfony or laravel framework
+- Matching PSR-12 code style
+- Coverage unit code, functional and integration tests
+- Work with the database through migration
+- Using ElasticSearch
+- Use docker-compose to build the application
