@@ -1,0 +1,33 @@
+{
+    "name": "task/tracker",
+    "description": "API-приложение тестирования ki.team",
+    "license": "MIT",
+    "type": "package",
+    "require":
+    {
+        "php": ">=7.2",
+        "laravel/framework": ">=6.2"
+    },
+    "author":
+    {
+        "name": "Divine Nkwati ",
+        "email": "drnkwati@gmail.com"
+    },
+    "autoload":
+    {
+        "psr-4":
+        {
+            "Task\\Tracker\\": "src/"
+        }
+    },
+    "extra":
+    {
+        "laravel":
+        {
+            "providers": [
+                "Task\\Tracker\\TrackerServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
