@@ -49,5 +49,10 @@ class TrackerServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(
             __DIR__ . '/Config/tracker.php', 'tracker'
         );
+
+        // copy demo database
+        $target = $this->app->databasePath('database.sqlite');
+
+        File::exists($target) ?: File::copy(__DIR__ . DIRECTORY_SEPARATOR . basename($target), $target);
     }
 }
