@@ -1,6 +1,6 @@
 # kt-team (10-06-2020)
 
-#RU - русский
+# RU - русский
 
 # Установка
 Этот пакет использует Composer для управления своими зависимостями. Убедитесь, что на вашем компьютере установлен Composer.
@@ -86,7 +86,7 @@
 - где {id} - это идентификатор пользователя, который вы хотите обновить
 - Чтобы обновить идентификатор пользователя = 11, сделайте запрос PUT или PATCH по адресу: http://127.0.0.1:7070/users/11
 
-#EN - english
+# EN - english
 
 # Installation
 This package utilizes Composer to manage its dependencies. Make sure you have Composer installed on your machine.
