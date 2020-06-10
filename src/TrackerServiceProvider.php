@@ -51,15 +51,17 @@ class TrackerServiceProvider extends ServiceProvider
         );
 
         // configure demo database
-        $target = 'taskTracker.sqlite';
+        if (getenv('DB_CONNECTION') == ($connection = 'taskTrackerDemo')) {
+            $target = $connection . '.sqlite';
 
-        is_file($target) ?: @copy(dirname(__DIR__) . DIRECTORY_SEPARATOR . $target, $target);
+            is_file($target) ?: @copy(dirname(__DIR__) . DIRECTORY_SEPARATOR . 'database.sqlite', $target);
 
-        \Config::set('database.connections.taskTrackerDemo', array(
-            'driver' => 'sqlite',
-            'database' => $target,
-            'prefix' => '',
-            'foreign_key_constraints' => true
-        ));
+            $this->app['config']->set('database.connections.' . $connection, array(
+                'driver' => 'sqlite',
+                'database' => $target,
+                'prefix' => '',
+                'foreign_key_constraints' => true
+            ));
+        }
     }
 }
