@@ -7,6 +7,7 @@ namespace Task\Tracker\Contracts;
 interface ApiContract
 {
     /**
+     * The http success response code
      * https://jsonapi.org/format/#crud-updating-relationship-responses
      * 200 OK
      *
