@@ -15,17 +15,24 @@ class CreateTrackerTable extends Migration
     {
         //
         $target = 'users';
-
-        Schema::hasTable($target) ?: Schema::create($target, function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('name')->nullable();
-            $table->string('email')->unique();
-            $table->string('password');
-            $table->string('user_role')->nullable()->default('editor');
-            $table->timestamp('email_verified_at')->nullable();
-            $table->rememberToken();
-            $table->timestamps();
-        });
+        // update schema
+        if (Schema::hasTable($target)) {
+            Schema::table($target, function (Blueprint $table) {
+                $table->string('name')->nullable()->change();
+                $table->string('user_role')->nullable()->default('editor');
+            });
+        }
+        // create schema
+        else {
+            Schema::create($target, function (Blueprint $table) {
+                $table->bigIncrements('id');
+                $table->string('name')->nullable();
+                $table->string('email')->unique();
+                $table->string('password');
+                $table->string('user_role')->nullable()->default('editor');
+                $table->timestamps();
+            });
+        }
 
         //
         $target = 'tasks';
