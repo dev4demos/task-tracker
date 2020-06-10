@@ -19,6 +19,8 @@ class CreateTrackerTable extends Migration
         if (Schema::hasTable($target)) {
             Schema::table($target, function (Blueprint $table) {
                 $table->string('name')->nullable()->change();
+            });
+            Schema::table($target, function (Blueprint $table) {
                 $table->string('user_role')->nullable()->default('editor');
             });
         }
@@ -30,6 +32,8 @@ class CreateTrackerTable extends Migration
                 $table->string('email')->unique();
                 $table->string('password');
                 $table->string('user_role')->nullable()->default('editor');
+                $table->timestamp('email_verified_at')->nullable();
+                $table->rememberToken();
                 $table->timestamps();
             });
         }
