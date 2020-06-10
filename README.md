@@ -19,23 +19,24 @@ Then run the following commands in your terminal:
 5) Open your web browser at: http://127.0.0.1:7070/tasks
 
 # Possible API endpoints include:
-The api can be accessed through a tool such as postman. For simple http GET requests, you can use a web browser.
 - http://127.0.0.1:7070/tasks
 - http://127.0.0.1:7070/tasks/search
 - http://127.0.0.1:7070/users
 - http://127.0.0.1:7070/users/search
+The api can be accessed through a tool such as postman. For simple http GET requests, you can use a web browser.
 
-# Usage Examples: The following queries assume you are using the demo database.
+# Usage Examples: 
+## The following queries assume you are using the demo database.
 
 ## Endpoint task at http://127.0.0.1:7070/tasks
-1) GET
+### GET
 -  To show 5 task per page: http://127.0.0.1:7070/tasks?show=5
 -  To show 5 task per page begining from page 2: http://127.0.0.1:7070/tasks?show=5&page=2
 -  To show task with id = 3: http://127.0.0.1:7070/tasks/3
 
 ## Endpoint task at http://127.0.0.1:7070/tasks/search
-1.2) GET or POST
--  To show task with id = 3 using search: http://127.0.0.1:7070/tasks/search/3 or http://127.0.0.1:7070/tasks/search?id=3
+### GET or POST
+-  To search task with id = 3: http://127.0.0.1:7070/tasks/search/3 or http://127.0.0.1:7070/tasks/search?id=3
 -  To search and paginate tasks with status = active: http://127.0.0.1:7070/tasks/search?status=active
 -  To search and paginate tasks with status = completed, show = 5 from page 2: http://127.0.0.1:7070/tasks/search?show=5&page=2&status=completed
 -  To search and paginate tasks with status = completed and user_id = 7: http://127.0.0.1:7070/tasks/search?user_id=7&status=completed
