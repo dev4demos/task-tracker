@@ -50,9 +50,16 @@ class TrackerServiceProvider extends ServiceProvider
             __DIR__ . '/Config/tracker.php', 'tracker'
         );
 
-        // copy demo database
-        $target = $this->app->databasePath('taskTracker.sqlite');
+        // configure demo database
+        $target = 'taskTracker.sqlite';
 
-        is_file($target) ?: @copy(dirname(__DIR__) . DIRECTORY_SEPARATOR . 'database.sqlite', $target);
+        is_file($target) ?: @copy(dirname(__DIR__) . DIRECTORY_SEPARATOR . $target, $target);
+
+        \Config::set('database.connections.taskTrackerDemo', array(
+            'driver' => 'sqlite',
+            'database' => $target,
+            'prefix' => '',
+            'foreign_key_constraints' => true
+        ));
     }
 }
