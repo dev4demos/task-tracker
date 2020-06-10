@@ -2,6 +2,7 @@
 
 # RU - русский
 
+### Время, потраченное на каждую часть проекта
 - Чтение документации на jsonapi.org                  7 часов.
 - Написание документации 4 часа.
 - Моделирование приложения, базы данных и кодирования 13 часов.
@@ -94,6 +95,7 @@
 
 # EN - english
 
+### Time spent on each part of the project
 - Reading jsonapi.org documentation       7 hrs.
 - Writing documentation 4 hrs.
 - Modelling the APP, database and coding  13 hrs.
