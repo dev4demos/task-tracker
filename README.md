@@ -2,6 +2,12 @@
 
 # RU - русский
 
+Чтение документации на jsonapi.org                  7 часов.
+Написание документации 4 часа.
+Моделирование приложения, базы данных и кодирования 13 часов.
+Тестирование отладки и публикация пакета            5 часов.
+Общее время проекта                                 29 часов.
+
 # Установка
 Этот пакет использует Composer для управления своими зависимостями. Убедитесь, что на вашем компьютере установлен Composer.
 Затем выполните следующие команды в своем терминале:
@@ -87,6 +93,12 @@
 - Чтобы обновить идентификатор пользователя = 11, сделайте запрос PUT или PATCH по адресу: http://127.0.0.1:7070/users/11
 
 # EN - english
+
+Reading jsonapi.org documentation       7 hrs.
+Writing documentation 4 hrs.
+Modelling the APP, database and coding  13 hrs.
+Testing debug and publishing package    5 hrs.
+total project time                      29 hrs.
 
 # Installation
 This package utilizes Composer to manage its dependencies. Make sure you have Composer installed on your machine.
