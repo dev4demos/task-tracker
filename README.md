@@ -5,16 +5,16 @@ This package utilizes Composer to manage its dependencies. Make sure you have Co
 Then run the following commands in your terminal: 
 1) The Laravel framework is required by this package. To install laravel, run the following command
 - composer create-project --prefer-dist laravel/laravel task "6.2.*"
-2) Change your directory to the newly created project. 
-- On windows the command is: cd task
+2) Change your directory to the newly created project. On windows the command is: 
+- cd task
 2) After laravel installation is complete, run the following command to install this package
 - composer require drnkwati/task-tracker
 3) change database configuration for your application in .env configuration file
 - You may use any relational database supported by laravel framework. Just set the database connection and run migrations.
 - For your convenience, this package comes with a demo sqlite database with seed data. 
 - To use this demo database, update your .env database configuration connection to: DB_CONNECTION=taskTrackerDemo
-4) You may use a web server such as Apache or Nginx to serve your applications. To use PHP's built-in development server.
-- On windows run the following command: php artisan serve --port=7070
+4) You may use a web server such as Apache or Nginx to serve your applications. To use PHP's built-in development server. On windows run the following command: 
+- php artisan serve --port=7070
 5) Open your web browser at: http://127.0.0.1:7070/tasks
 
 # Possible API endpoints include:
