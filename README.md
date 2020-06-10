@@ -1,5 +1,5 @@
 # kt-team-task
-тестовое задание 2020
+#### 10-06-2020
 
 # Installation
 This package utilizes Composer to manage its dependencies. Make sure you have Composer installed on your machine.
